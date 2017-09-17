@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pan Lorenc odpoví...</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="./js/libs/jquery/jquery.js"></script>
+        <script type="text/javascript" src="./js/panLorenc.js"></script>
+    </head>
+    <body>
+        <img alt="Pan Lorenc" id="panLorenc" src="./images/panLorenc.jpg">
+        <div id="question">
+            <h1>Zeptej se mě na co chceš, pokud odpověď je ano/ne...</h1>
+            <form id="questionForm" onSubmit="return false;">
+                <input id="questionText" type="text">
+                <input id="askQuestion" type="button" value="Zeptat se!">
+            </form>
+        </div>
+        <div id="answer" hidden="">
+            <h1>Odpověď je: 
+            <span id="answerText"></span>
+            </h1>
+            <form id="reloadPage">
+                <input id="reloadPageButton" type="button" value="Nová otázka!">
+            </form>
+        </div>    
+    </body>
+</html>
